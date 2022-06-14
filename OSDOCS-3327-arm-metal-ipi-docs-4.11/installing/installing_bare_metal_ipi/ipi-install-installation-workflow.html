@@ -31496,7 +31496,7 @@ available stable version of OpenShift Container Platform:</p>
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="terminal">$ export VERSION=stable-Branch Build
 $ export RELEASE_ARCH=x86_64
-export RELEASE_IMAGE=$(curl -s https://mirror.openshift.com/pub/openshift-v4/x86_64/ocp/$VERSION/release.txt | grep 'Pull From: quay.io' | awk -F ' ' '{print $3}')</code></pre>
+export RELEASE_IMAGE=$(curl -s https://mirror.openshift.com/pub/openshift-v4/$RELEASE_ARCH/ocp/$VERSION/release.txt | grep 'Pull From: quay.io' | awk -F ' ' '{print $3}')</code></pre>
 </div>
 </div>
 <div class="listingblock">
@@ -31504,7 +31504,7 @@ export RELEASE_IMAGE=$(curl -s https://mirror.openshift.com/pub/openshift-v4/x86
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="terminal">$ export VERSION=stable-Branch Build
 $ export RELEASE_ARCH=aarch64
-export RELEASE_IMAGE=$(curl -s https://mirror.openshift.com/pub/openshift-v4/aarch64/ocp/$VERSION/release.txt | grep 'Pull From: quay.io' | awk -F ' ' '{print $3}')</code></pre>
+export RELEASE_IMAGE=$(curl -s https://mirror.openshift.com/pub/openshift-v4/$RELEASE_ARCH/ocp/$VERSION/release.txt | grep 'Pull From: quay.io' | awk -F ' ' '{print $3}')</code></pre>
 </div>
 </div>
 </div>
@@ -32245,7 +32245,7 @@ and the <code>bmc</code> parameter for the <code>install-config.yaml</code> file
 </div>
 <h4 id="redfish-apis" class="discrete">Redfish APIs</h4>
 <div class="paragraph">
-<p>When running your bare-metal installer-provisioned infrastructure, you need to call several redfish API endpoints on your BMC.</p>
+<p>Several redfish API endpoints are called onto your BCM when using the bare-metal installer-provisioned infastructure.</p>
 </div>
 <div class="admonitionblock important">
 <table>
