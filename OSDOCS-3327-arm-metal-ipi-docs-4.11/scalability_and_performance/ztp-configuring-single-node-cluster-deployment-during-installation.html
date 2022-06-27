@@ -523,6 +523,19 @@
 
             <!-- ^ this establishs whether we are reading this current page -->
 
+            <li><a class="" href="../architecture/ocm-overview-ocp.html">Red Hat OpenShift Cluster Manager</a></li>
+            <!--  if active, then highlight it,  otherwise nothing to do -->
+
+
+        <!-- for each topic in this topic_group, for example in Welcome 1, what topics exist?
+        Welcome 2 and Welcome 1 More -->
+
+
+          <!-- is this is a single page? That is, does this topic have more topics?
+          Welcome 1 More -->
+
+            <!-- ^ this establishs whether we are reading this current page -->
+
             <li><a class="" href="../architecture/control-plane.html">Control plane architecture</a></li>
             <!--  if active, then highlight it,  otherwise nothing to do -->
 
@@ -684,7 +697,7 @@
 
                   <li>
                     <a class="" href="../installing/disconnected_install/installing-mirroring-creating-registry.html">
-                      Creating a mirror registry
+                      Creating a mirror registry with mirror registry for Red Hat OpenShift
                     </a>
                   </li>
 
@@ -2087,7 +2100,7 @@
             <li class="nav-header">
               <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-8">
                 <span id="sgSpan-4-8" class="fa fa-caret-right"></span>
-                  &nbsp;Installing on IBM Cloud
+                  &nbsp;Installing on IBM Cloud VPC
 
                   <!-- prints out the names of the second level books with arrow down or to right
                   So in this case: Welcome 2 -->
@@ -2112,7 +2125,7 @@
 
                   <li>
                     <a class="" href="../installing/installing_ibm_cloud_public/preparing-to-install-on-ibm-cloud.html">
-                      Preparing to install on IBM Cloud
+                      Preparing to install on IBM Cloud VPC
                     </a>
                   </li>
 
@@ -2136,7 +2149,7 @@
 
                   <li>
                     <a class="" href="../installing/installing_ibm_cloud_public/installing-ibm-cloud-account.html">
-                      Configuring an IBM Cloud account
+                      Configuring an IBM Cloud account VPC
                     </a>
                   </li>
 
@@ -2160,7 +2173,7 @@
 
                   <li>
                     <a class="" href="../installing/installing_ibm_cloud_public/configuring-iam-ibm-cloud.html">
-                      Configuring IAM for IBM Cloud
+                      Configuring IAM for IBM Cloud VPC
                     </a>
                   </li>
 
@@ -2184,7 +2197,7 @@
 
                   <li>
                     <a class="" href="../installing/installing_ibm_cloud_public/installing-ibm-cloud-customizations.html">
-                      Installing a cluster on IBM Cloud with customizations
+                      Installing a cluster on IBM Cloud VPC with customizations
                     </a>
                   </li>
 
@@ -2208,7 +2221,7 @@
 
                   <li>
                     <a class="" href="../installing/installing_ibm_cloud_public/installing-ibm-cloud-network-customizations.html">
-                      Installing a cluster on IBM Cloud with network customizations
+                      Installing a cluster on IBM Cloud VPC with network customizations
                     </a>
                   </li>
 
@@ -2232,7 +2245,7 @@
 
                   <li>
                     <a class="" href="../installing/installing_ibm_cloud_public/uninstalling-cluster-ibm-cloud.html">
-                      Uninstalling a cluster on IBM Cloud
+                      Uninstalling a cluster on IBM Cloud VPC
                     </a>
                   </li>
 
@@ -8314,7 +8327,31 @@
 
 
                   <li>
-                    <a class="" href="../networking/external_dns_operator/nw-installing-external-dns-operator.html">
+                    <a class="" href="../networking/external_dns_operator/understanding-external-dns-operator.html">
+                      Understanding the External DNS Operator
+                    </a>
+                  </li>
+
+                
+
+
+                <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
+                     Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
+
+                
+                
+                
+                
+                
+
+                <!-- is this is a single page? That is, does this topic have more topics?
+                 Welcome 2 Index Page and Welcome 2 More -->
+
+
+
+
+                  <li>
+                    <a class="" href="../networking/external_dns_operator/nw-installing-external-dns-operator-on-cloud-providers.html">
                       Installing the External DNS Operator
                     </a>
                   </li>
@@ -8338,7 +8375,7 @@
 
 
                   <li>
-                    <a class="" href="../networking/external_dns_operator/nw-external-dns-operator-configuration-parameters.html">
+                    <a class="" href="../networking/external_dns_operator/nw-configuration-parameters.html">
                       External DNS Operator configuration parameters
                     </a>
                   </li>
@@ -8362,7 +8399,7 @@
 
 
                   <li>
-                    <a class="" href="../networking/external_dns_operator/nw-control-dns-records-public-hosted-zone-aws.html">
+                    <a class="" href="../networking/external_dns_operator/nw-creating-dns-records-on-aws.html">
                       Creating DNS records on an public hosted zone for AWS
                     </a>
                   </li>
@@ -8386,7 +8423,7 @@
 
 
                   <li>
-                    <a class="" href="../networking/external_dns_operator/nw-control-dns-records-public-hosted-zone-azure.html">
+                    <a class="" href="../networking/external_dns_operator/nw-creating-dns-records-on-azure.html">
                       Creating DNS records on an public zone for Azure
                     </a>
                   </li>
@@ -8410,8 +8447,32 @@
 
 
                   <li>
-                    <a class="" href="../networking/external_dns_operator/nw-control-dns-records-public-managed-zone-gcp.html">
+                    <a class="" href="../networking/external_dns_operator/nw-creating-dns-records-on-gcp.html">
                       Creating DNS records on an public managed zone for GCP
+                    </a>
+                  </li>
+
+                
+
+
+                <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
+                     Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
+
+                
+                
+                
+                
+                
+
+                <!-- is this is a single page? That is, does this topic have more topics?
+                 Welcome 2 Index Page and Welcome 2 More -->
+
+
+
+
+                  <li>
+                    <a class="" href="../networking/external_dns_operator/nw-creating-dns-records-on-infoblox.html">
+                      Creating DNS records on a public DNS zone for Infoblox
                     </a>
                   </li>
 
@@ -8646,13 +8707,131 @@
             <li class="nav-header">
               <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-14">
                 <span id="sgSpan-12-14" class="fa fa-caret-right"></span>
-                  &nbsp;Multiple networks
+                  &nbsp;AWS Load Balancer Operator
 
                   <!-- prints out the names of the second level books with arrow down or to right
                   So in this case: Welcome 2 -->
 
               </a>
               <ul id="topicSubGroup-12-14" class="nav-tertiary list-unstyled collapse">
+
+                <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
+                     Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
+
+                
+                
+                
+                
+                
+
+                <!-- is this is a single page? That is, does this topic have more topics?
+                 Welcome 2 Index Page and Welcome 2 More -->
+
+
+
+
+                  <li>
+                    <a class="" href="../networking/aws_load_balancer_operator/install-aws-load-balancer-operator.html">
+                      Installing the AWS Load Balancer Operator
+                    </a>
+                  </li>
+
+                
+
+
+                <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
+                     Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
+
+                
+                
+                
+                
+                
+
+                <!-- is this is a single page? That is, does this topic have more topics?
+                 Welcome 2 Index Page and Welcome 2 More -->
+
+
+
+
+                  <li>
+                    <a class="" href="../networking/aws_load_balancer_operator/create-instance-aws-load-balancer-controller.html">
+                      Creating an instance of the AWS Load Balancer Controller
+                    </a>
+                  </li>
+
+                
+
+
+                <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
+                     Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
+
+                
+                
+                
+                
+                
+
+                <!-- is this is a single page? That is, does this topic have more topics?
+                 Welcome 2 Index Page and Welcome 2 More -->
+
+
+
+
+                  <li>
+                    <a class="" href="../networking/aws_load_balancer_operator/multiple-ingress-through-single-alb.html">
+                      Serving Multiple Ingresses through a single AWS Load Balancer
+                    </a>
+                  </li>
+
+                
+
+
+                <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
+                     Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
+
+                
+                
+                
+                
+                
+
+                <!-- is this is a single page? That is, does this topic have more topics?
+                 Welcome 2 Index Page and Welcome 2 More -->
+
+
+
+
+                  <li>
+                    <a class="" href="../networking/aws_load_balancer_operator/add-tls-termination.html">
+                      Adding TLS termination on the AWS Load Balancer
+                    </a>
+                  </li>
+
+                
+
+              </ul>
+            </li>
+
+        <!-- for each topic in this topic_group, for example in Welcome 1, what topics exist?
+        Welcome 2 and Welcome 1 More -->
+
+
+            <!-- this topic contains subtopics - Welcome 2 -->
+
+
+            <!-- start a new heading area -->
+
+            <li class="nav-header">
+              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-15">
+                <span id="sgSpan-12-15" class="fa fa-caret-right"></span>
+                  &nbsp;Multiple networks
+
+                  <!-- prints out the names of the second level books with arrow down or to right
+                  So in this case: Welcome 2 -->
+
+              </a>
+              <ul id="topicSubGroup-12-15" class="nav-tertiary list-unstyled collapse">
 
                 <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
                      Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
@@ -8882,15 +9061,15 @@
             <!-- start a new heading area -->
 
             <li class="nav-header">
-              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-15">
-                <span id="sgSpan-12-15" class="fa fa-caret-right"></span>
+              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-16">
+                <span id="sgSpan-12-16" class="fa fa-caret-right"></span>
                   &nbsp;Hardware networks
 
                   <!-- prints out the names of the second level books with arrow down or to right
                   So in this case: Welcome 2 -->
 
               </a>
-              <ul id="topicSubGroup-12-15" class="nav-tertiary list-unstyled collapse">
+              <ul id="topicSubGroup-12-16" class="nav-tertiary list-unstyled collapse">
 
                 <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
                      Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
@@ -9192,15 +9371,15 @@
             <!-- start a new heading area -->
 
             <li class="nav-header">
-              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-16">
-                <span id="sgSpan-12-16" class="fa fa-caret-right"></span>
+              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-17">
+                <span id="sgSpan-12-17" class="fa fa-caret-right"></span>
                   &nbsp;OpenShift SDN default CNI network provider
 
                   <!-- prints out the names of the second level books with arrow down or to right
                   So in this case: Welcome 2 -->
 
               </a>
-              <ul id="topicSubGroup-12-16" class="nav-tertiary list-unstyled collapse">
+              <ul id="topicSubGroup-12-17" class="nav-tertiary list-unstyled collapse">
 
                 <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
                      Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
@@ -9574,15 +9753,15 @@
             <!-- start a new heading area -->
 
             <li class="nav-header">
-              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-17">
-                <span id="sgSpan-12-17" class="fa fa-caret-right"></span>
+              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-18">
+                <span id="sgSpan-12-18" class="fa fa-caret-right"></span>
                   &nbsp;OVN-Kubernetes default CNI network provider
 
                   <!-- prints out the names of the second level books with arrow down or to right
                   So in this case: Welcome 2 -->
 
               </a>
-              <ul id="topicSubGroup-12-17" class="nav-tertiary list-unstyled collapse">
+              <ul id="topicSubGroup-12-18" class="nav-tertiary list-unstyled collapse">
 
                 <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
                      Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
@@ -10004,15 +10183,15 @@
             <!-- start a new heading area -->
 
             <li class="nav-header">
-              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-18">
-                <span id="sgSpan-12-18" class="fa fa-caret-right"></span>
+              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-19">
+                <span id="sgSpan-12-19" class="fa fa-caret-right"></span>
                   &nbsp;Configuring Routes
 
                   <!-- prints out the names of the second level books with arrow down or to right
                   So in this case: Welcome 2 -->
 
               </a>
-              <ul id="topicSubGroup-12-18" class="nav-tertiary list-unstyled collapse">
+              <ul id="topicSubGroup-12-19" class="nav-tertiary list-unstyled collapse">
 
                 <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
                      Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
@@ -10074,15 +10253,15 @@
             <!-- start a new heading area -->
 
             <li class="nav-header">
-              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-19">
-                <span id="sgSpan-12-19" class="fa fa-caret-right"></span>
+              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-20">
+                <span id="sgSpan-12-20" class="fa fa-caret-right"></span>
                   &nbsp;Configuring ingress cluster traffic
 
                   <!-- prints out the names of the second level books with arrow down or to right
                   So in this case: Welcome 2 -->
 
               </a>
-              <ul id="topicSubGroup-12-19" class="nav-tertiary list-unstyled collapse">
+              <ul id="topicSubGroup-12-20" class="nav-tertiary list-unstyled collapse">
 
                 <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
                      Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
@@ -10196,8 +10375,8 @@
 
 
                   <li>
-                    <a class="" href="../networking/configuring_ingress_cluster_traffic/configuring-ingress-cluster-traffic-aws-network-load-balancer.html">
-                      Configuring ingress cluster traffic on AWS using a Network Load Balancer
+                    <a class="" href="../networking/configuring_ingress_cluster_traffic/configuring-ingress-cluster-traffic-aws.html">
+                      Configuring ingress cluster traffic on AWS
                     </a>
                   </li>
 
@@ -10264,15 +10443,15 @@
             <!-- start a new heading area -->
 
             <li class="nav-header">
-              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-20">
-                <span id="sgSpan-12-20" class="fa fa-caret-right"></span>
+              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-21">
+                <span id="sgSpan-12-21" class="fa fa-caret-right"></span>
                   &nbsp;Kubernetes NMState
 
                   <!-- prints out the names of the second level books with arrow down or to right
                   So in this case: Welcome 2 -->
 
               </a>
-              <ul id="topicSubGroup-12-20" class="nav-tertiary list-unstyled collapse">
+              <ul id="topicSubGroup-12-21" class="nav-tertiary list-unstyled collapse">
 
                 <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
                      Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
@@ -10421,15 +10600,15 @@
             <!-- start a new heading area -->
 
             <li class="nav-header">
-              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-24">
-                <span id="sgSpan-12-24" class="fa fa-caret-right"></span>
+              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-25">
+                <span id="sgSpan-12-25" class="fa fa-caret-right"></span>
                   &nbsp;Load balancing with MetalLB
 
                   <!-- prints out the names of the second level books with arrow down or to right
                   So in this case: Welcome 2 -->
 
               </a>
-              <ul id="topicSubGroup-12-24" class="nav-tertiary list-unstyled collapse">
+              <ul id="topicSubGroup-12-25" class="nav-tertiary list-unstyled collapse">
 
                 <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
                      Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
@@ -12772,6 +12951,66 @@
                     <li>
                       <a class="" href="../operators/operator_sdk/helm/osdk-hybrid-helm.html" style="padding-left: 70px;">
                         Hybrid Helm Operator
+                      </a>
+                    </li>
+
+                  </ul>
+                  </li>
+
+
+
+
+                <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
+                     Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
+
+                
+                
+                
+                
+                
+
+
+
+                <!-- Welcome 3 -->
+
+
+                
+                
+                
+
+                <li class="nav-header">
+                  <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-15-4-6">
+                    <span id="ssgSpan-15-4-6" class="fa fa-caret-right"></span>
+                    &nbsp;Java-based Operators
+                  </a>
+                  <ul id="topicSubSubGroup-15-4-6" class="nav-tertiary list-unstyled collapse">
+
+                    <!-- list all topics within Welcome 3 here. Note that we are not coding this for more subtopics here -->
+
+
+                    <li>
+                      <a class="" href="../operators/operator_sdk/java/osdk-java-quickstart.html" style="padding-left: 70px;">
+                        Getting started
+                      </a>
+                    </li>
+
+
+                    <!-- list all topics within Welcome 3 here. Note that we are not coding this for more subtopics here -->
+
+
+                    <li>
+                      <a class="" href="../operators/operator_sdk/java/osdk-java-tutorial.html" style="padding-left: 70px;">
+                        Tutorial
+                      </a>
+                    </li>
+
+
+                    <!-- list all topics within Welcome 3 here. Note that we are not coding this for more subtopics here -->
+
+
+                    <li>
+                      <a class="" href="../operators/operator_sdk/java/osdk-java-project-layout.html" style="padding-left: 70px;">
+                        Project layout
                       </a>
                     </li>
 
@@ -28227,7 +28466,7 @@
 
                     <li>
                       <a class="" href="../virt/virtual_machines/vm_networking/virt-using-the-default-pod-network-with-virt.html" style="padding-left: 70px;">
-                        Using the default pod network with OpenShift Virtualization
+                        Configuring the virtual machine for the default pod network
                       </a>
                     </li>
 
@@ -28237,7 +28476,7 @@
 
                     <li>
                       <a class="" href="../virt/virtual_machines/vm_networking/virt-attaching-vm-multiple-networks.html" style="padding-left: 70px;">
-                        Attaching a virtual machine to multiple networks
+                        Attaching a virtual machine to a Linux bridge network
                       </a>
                     </li>
 
@@ -28810,7 +29049,7 @@
 
                   <li>
                     <a class="" href="../virt/live_migration/virt-migrating-vm-on-secondary-network.html">
-                      Migrating a virtual machine over a dedicated secondary network
+                      Migrating a virtual machine over a dedicated additional network
                     </a>
                   </li>
 
@@ -30328,7 +30567,7 @@
 
                   <li>
                     <a class="" href="../serverless/develop/serverless-kafka-developer.html">
-                      Knative Kafka
+                      Using Knative Kafka
                     </a>
                   </li>
 
@@ -30398,7 +30637,7 @@
 
                   <li>
                     <a class="" href="../serverless/admin_guide/serverless-kafka-admin.html">
-                      Knative Kafka
+                      Configuring Knative Kafka
                     </a>
                   </li>
 
@@ -30421,56 +30660,8 @@
 
 
                   <li>
-                    <a class="" href="../serverless/admin_guide/serverless-cluster-admin-eventing.html">
-                      Creating Knative Eventing components in the Administrator perspective
-                    </a>
-                  </li>
-
-                
-
-
-                <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
-                     Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
-
-                
-                
-                
-                
-                
-
-                <!-- is this is a single page? That is, does this topic have more topics?
-                 Welcome 2 Index Page and Welcome 2 More -->
-
-
-
-
-                  <li>
-                    <a class="" href="../serverless/admin_guide/serverless-cluster-admin-serving.html">
-                      Creating Knative Serving components in the Administrator perspective
-                    </a>
-                  </li>
-
-                
-
-
-                <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
-                     Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
-
-                
-                
-                
-                
-                
-
-                <!-- is this is a single page? That is, does this topic have more topics?
-                 Welcome 2 Index Page and Welcome 2 More -->
-
-
-
-
-                  <li>
-                    <a class="" href="../serverless/admin_guide/serverless-admin-autoscaling.html">
-                      Autoscaling
+                    <a class="" href="../serverless/admin_guide/serverless-admin-perspective.html">
+                      Serverless components in the Administrator perspective
                     </a>
                   </li>
 
@@ -30542,7 +30733,7 @@
 
                   <li>
                     <a class="" href="../serverless/admin_guide/serverless-ha.html">
-                      High availability on OpenShift Serverless
+                      High availability
                     </a>
                   </li>
 
@@ -31168,7 +31359,7 @@
 <li><a href="#sno-du-configuring-the-operators_sno-du-deploying-distributed-units-manually-on-single-node-openshift">Creating OperatorGroups for Operators</a></li>
 <li><a href="#sno-du-subscribing-to-the-operators-needed-for-platform-configuration_sno-du-deploying-distributed-units-manually-on-single-node-openshift">Subscribing to the Operators</a></li>
 <li><a href="#sno-du-configuring-logging-locally-and-forwarding_sno-du-deploying-distributed-units-manually-on-single-node-openshift">Configuring logging locally and forwarding</a></li>
-<li><a href="#sno-du-configuring-performance-addons_sno-du-deploying-distributed-units-manually-on-single-node-openshift">Configuring the Performance Addon Operator</a></li>
+<li><a href="#sno-du-configuring-performance-addons_sno-du-deploying-distributed-units-manually-on-single-node-openshift">Configuring the Node Tuning Operator</a></li>
 <li><a href="#sno-du-configuring-ptp_sno-du-deploying-distributed-units-manually-on-single-node-openshift">Configuring Precision Time Protocol (PTP)</a></li>
 <li><a href="#sno-du-disabling-ntp_sno-du-deploying-distributed-units-manually-on-single-node-openshift">Disabling Network Time Protocol (NTP)</a></li>
 <li><a href="#sno-du-configuring-sriov_sno-du-deploying-distributed-units-manually-on-single-node-openshift">Configuring single root I/O virtualization (SR-IOV)</a></li>
@@ -31273,7 +31464,59 @@ the number of cores on the cluster.</p>
 </div>
 </div>
 </li>
+<li>
+<p>The contents of <code>/etc/crio/crio.conf.d/01-workload-partitioning</code> should look like this:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="text">[crio.runtime.workloads.management]
+activation_annotation = "target.workload.openshift.io/management"
+annotation_prefix = "resources.workload.openshift.io"
+resources = { "cpushares" = 0, "cpuset" = "0-1,52-53" } <i class="conum" data-value="1"></i><b>(1)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>The <code>cpuset</code> value will vary based on the installation.</td>
+</tr>
+</table>
+</div>
+</li>
 </ul>
+</div>
+<div class="paragraph">
+<p>If Hyper-Threading is enabled, specify both threads of each core. The <code>cpuset</code> must match the reserved CPU set specified in the performance profile.</p>
+</div>
+<div class="paragraph">
+<p>This content should be base64 encoded and provided in the <code>01-workload-partitioning-content</code> in the manifest above.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The contents of <code>/etc/kubernetes/openshift-workload-pinning</code> should look like this:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="javascript"><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">management</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">cpuset</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">0-1,52-53</span><span class="dl">"</span> <i class="conum" data-value="1"></i><b>(1)</b>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>The <code>cpuset</code> must match the value in <code>/etc/crio/crio.conf.d/01-workload-partitioning</code>.</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This content should be base64 encoded and provided in the <code>openshift-workload-pinning-content</code> in the preceding manifest.</p>
 </div>
 </div>
 <div class="sect2">
@@ -31401,7 +31644,7 @@ the number of cores on the cluster.</p>
 <div class="sect2">
 <h3 id="sno-du-configuring-the-operators_sno-du-deploying-distributed-units-manually-on-single-node-openshift"><a class="anchor" href="#sno-du-configuring-the-operators_sno-du-deploying-distributed-units-manually-on-single-node-openshift"></a>Creating OperatorGroups for Operators</h3>
 <div class="paragraph">
-<p>This configuration is provided to enable addition of the Operators needed to configure the platform post-installation. It adds the <code>Namespace</code> and <code>OperatorGroup</code> objects for the Local Storage Operator, Logging Operator, Performance Addon Operator, PTP Operator, and SRIOV Network Operator.</p>
+<p>This configuration is provided to enable addition of the Operators needed to configure the platform post-installation. It adds the <code>Namespace</code> and <code>OperatorGroup</code> objects for the Local Storage Operator, Logging Operator, PTP Operator, and SR-IOV Network Operator.</p>
 </div>
 <div class="ulist">
 <div class="title">Procedure</div>
@@ -31449,26 +31692,6 @@ the number of cores on the cluster.</p>
 </div>
 </div>
 <div class="listingblock">
-<div class="title">Performance Addon Operator</div>
-<div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">v1</span>
-<span class="na">kind</span><span class="pi">:</span> <span class="s">Namespace</span>
-<span class="na">metadata</span><span class="pi">:</span>
-  <span class="na">annotations</span><span class="pi">:</span>
-    <span class="s">workload.openshift.io/allowed</span><span class="pi">:</span> <span class="s">management</span>
-  <span class="na">labels</span><span class="pi">:</span>
-    <span class="s">openshift.io/cluster-monitoring</span><span class="pi">:</span> <span class="s2">"</span><span class="s">true"</span>
-  <span class="na">name</span><span class="pi">:</span> <span class="s">openshift-performance-addon-operator</span>
-<span class="na">spec</span><span class="pi">:</span> <span class="pi">{}</span>
-<span class="nn">---</span>
-<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">operators.coreos.com/v1</span>
-<span class="na">kind</span><span class="pi">:</span> <span class="s">OperatorGroup</span>
-<span class="na">metadata</span><span class="pi">:</span>
-  <span class="na">name</span><span class="pi">:</span> <span class="s">performance-addon-operator</span>
-  <span class="na">namespace</span><span class="pi">:</span> <span class="s">openshift-performance-addon-operator</span></code></pre>
-</div>
-</div>
-<div class="listingblock">
 <div class="title">PTP Operator</div>
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">v1</span>
@@ -31491,7 +31714,7 @@ the number of cores on the cluster.</p>
 </div>
 </div>
 <div class="listingblock">
-<div class="title">SRIOV Network Operator</div>
+<div class="title">SR-IOV Network Operator</div>
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">v1</span>
 <span class="na">kind</span><span class="pi">:</span> <span class="s">Namespace</span>
@@ -31554,22 +31777,10 @@ the number of cores on the cluster.</p>
 <span class="na">apiVersion</span><span class="pi">:</span> <span class="s">operators.coreos.com/v1alpha1</span>
 <span class="na">kind</span><span class="pi">:</span> <span class="s">Subscription</span>
 <span class="na">metadata</span><span class="pi">:</span>
-  <span class="na">name</span><span class="pi">:</span> <span class="s">performance-addon-operator</span>
-  <span class="na">namespace</span><span class="pi">:</span> <span class="s">openshift-performance-addon-operator</span>
-<span class="na">spec</span><span class="pi">:</span>
-  <span class="na">channel</span><span class="pi">:</span> <span class="s2">"</span><span class="s">4.10"</span> <i class="conum" data-value="4"></i><b>(4)</b>
-  <span class="na">name</span><span class="pi">:</span> <span class="s">performance-addon-operator</span>
-  <span class="na">source</span><span class="pi">:</span> <span class="s">performance-addon-operator</span>
-  <span class="na">sourceNamespace</span><span class="pi">:</span> <span class="s">openshift-marketplace</span>
-  <span class="na">installPlanApproval</span><span class="pi">:</span> <span class="s">Manual</span>
-<span class="nn">---</span>
-<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">operators.coreos.com/v1alpha1</span>
-<span class="na">kind</span><span class="pi">:</span> <span class="s">Subscription</span>
-<span class="na">metadata</span><span class="pi">:</span>
     <span class="na">name</span><span class="pi">:</span> <span class="s">ptp-operator-subscription</span>
     <span class="na">namespace</span><span class="pi">:</span> <span class="s">openshift-ptp</span>
 <span class="na">spec</span><span class="pi">:</span>
-  <span class="na">channel</span><span class="pi">:</span> <span class="s2">"</span><span class="s">stable"</span> <i class="conum" data-value="5"></i><b>(5)</b>
+  <span class="na">channel</span><span class="pi">:</span> <span class="s2">"</span><span class="s">stable"</span> <i class="conum" data-value="4"></i><b>(4)</b>
   <span class="na">name</span><span class="pi">:</span> <span class="s">ptp-operator</span>
   <span class="na">source</span><span class="pi">:</span> <span class="s">redhat-operators</span>
   <span class="na">sourceNamespace</span><span class="pi">:</span> <span class="s">openshift-marketplace</span>
@@ -31581,7 +31792,7 @@ the number of cores on the cluster.</p>
   <span class="na">name</span><span class="pi">:</span> <span class="s">sriov-network-operator-subscription</span>
   <span class="na">namespace</span><span class="pi">:</span> <span class="s">openshift-sriov-network-operator</span>
 <span class="na">spec</span><span class="pi">:</span>
-  <span class="na">channel</span><span class="pi">:</span> <span class="s2">"</span><span class="s">stable"</span> <i class="conum" data-value="6"></i><b>(6)</b>
+  <span class="na">channel</span><span class="pi">:</span> <span class="s2">"</span><span class="s">stable"</span> <i class="conum" data-value="5"></i><b>(5)</b>
   <span class="na">name</span><span class="pi">:</span> <span class="s">sriov-network-operator</span>
   <span class="na">source</span><span class="pi">:</span> <span class="s">redhat-operators</span>
   <span class="na">sourceNamespace</span><span class="pi">:</span> <span class="s">openshift-marketplace</span>
@@ -31604,14 +31815,10 @@ the number of cores on the cluster.</p>
 </tr>
 <tr>
 <td><i class="conum" data-value="4"></i><b>4</b></td>
-<td>Specify the channel to get the <code>performance-addon-operator</code> Operator.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="5"></i><b>5</b></td>
 <td>Specify the channel to get the <code>ptp-operator</code> Operator.</td>
 </tr>
 <tr>
-<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
 <td>Specify the channel to get the <code>sriov-network-operator</code> Operator.</td>
 </tr>
 </table>
@@ -31695,7 +31902,7 @@ analysis.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="sno-du-configuring-performance-addons_sno-du-deploying-distributed-units-manually-on-single-node-openshift"><a class="anchor" href="#sno-du-configuring-performance-addons_sno-du-deploying-distributed-units-manually-on-single-node-openshift"></a>Configuring the Performance Addon Operator</h3>
+<h3 id="sno-du-configuring-performance-addons_sno-du-deploying-distributed-units-manually-on-single-node-openshift"><a class="anchor" href="#sno-du-configuring-performance-addons_sno-du-deploying-distributed-units-manually-on-single-node-openshift"></a>Configuring the Node Tuning Operator</h3>
 <div class="paragraph">
 <p>This is a key configuration for the single node distributed unit (DU). Many of the real-time capabilities and service assurance are configured here.</p>
 </div>
@@ -31703,7 +31910,7 @@ analysis.</p>
 <div class="title">Procedure</div>
 <ul>
 <li>
-<p>Configure the performance addons using the following example:</p>
+<p>Configure the performance profile using the following example:</p>
 <div class="listingblock">
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">performance.openshift.io/v2</span>
@@ -31872,7 +32079,7 @@ analysis.</p>
         <span class="s"># Default interface options</span>
         <span class="s">#</span>
         <span class="s">clock_type OC</span>
-        <span class="s">network_transport UDPv4</span>
+        <span class="s">network_transport L2</span>
         <span class="s">delay_mechanism E2E</span>
         <span class="s">time_stamping hardware</span>
         <span class="s">tsproc_mode filter</span>

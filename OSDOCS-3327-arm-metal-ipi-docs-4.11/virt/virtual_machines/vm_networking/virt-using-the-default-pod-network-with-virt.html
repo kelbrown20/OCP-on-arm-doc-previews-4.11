@@ -14,7 +14,7 @@
   
   
   
-  <title>Using the default pod network with OpenShift Virtualization | Virtualization | OpenShift Container Platform Branch Build</title>
+  <title>Configuring the virtual machine for the default pod network | Virtualization | OpenShift Container Platform Branch Build</title>
   <link href="https://assets.openshift.net/content/subdomain.css" rel="stylesheet" type="text/css">
   <link href="https://docs.openshift.com/container-platform/4.1/_stylesheets/search.css" rel="stylesheet" />
   <link href="https://docs.openshift.com/container-platform/4.1/_stylesheets/autumn.css" rel="stylesheet" />
@@ -221,7 +221,7 @@
       </li>
       
       <li class="hidden-xs active">
-        Using the default pod network with OpenShift Virtualization
+        Configuring the virtual machine for the default pod network
       </li>
       
       <span text-align="right" style="float: right !important">
@@ -523,6 +523,19 @@
 
             <!-- ^ this establishs whether we are reading this current page -->
 
+            <li><a class="" href="../../../architecture/ocm-overview-ocp.html">Red Hat OpenShift Cluster Manager</a></li>
+            <!--  if active, then highlight it,  otherwise nothing to do -->
+
+
+        <!-- for each topic in this topic_group, for example in Welcome 1, what topics exist?
+        Welcome 2 and Welcome 1 More -->
+
+
+          <!-- is this is a single page? That is, does this topic have more topics?
+          Welcome 1 More -->
+
+            <!-- ^ this establishs whether we are reading this current page -->
+
             <li><a class="" href="../../../architecture/control-plane.html">Control plane architecture</a></li>
             <!--  if active, then highlight it,  otherwise nothing to do -->
 
@@ -684,7 +697,7 @@
 
                   <li>
                     <a class="" href="../../../installing/disconnected_install/installing-mirroring-creating-registry.html">
-                      Creating a mirror registry
+                      Creating a mirror registry with mirror registry for Red Hat OpenShift
                     </a>
                   </li>
 
@@ -2087,7 +2100,7 @@
             <li class="nav-header">
               <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-8">
                 <span id="sgSpan-4-8" class="fa fa-caret-right"></span>
-                  &nbsp;Installing on IBM Cloud
+                  &nbsp;Installing on IBM Cloud VPC
 
                   <!-- prints out the names of the second level books with arrow down or to right
                   So in this case: Welcome 2 -->
@@ -2112,7 +2125,7 @@
 
                   <li>
                     <a class="" href="../../../installing/installing_ibm_cloud_public/preparing-to-install-on-ibm-cloud.html">
-                      Preparing to install on IBM Cloud
+                      Preparing to install on IBM Cloud VPC
                     </a>
                   </li>
 
@@ -2136,7 +2149,7 @@
 
                   <li>
                     <a class="" href="../../../installing/installing_ibm_cloud_public/installing-ibm-cloud-account.html">
-                      Configuring an IBM Cloud account
+                      Configuring an IBM Cloud account VPC
                     </a>
                   </li>
 
@@ -2160,7 +2173,7 @@
 
                   <li>
                     <a class="" href="../../../installing/installing_ibm_cloud_public/configuring-iam-ibm-cloud.html">
-                      Configuring IAM for IBM Cloud
+                      Configuring IAM for IBM Cloud VPC
                     </a>
                   </li>
 
@@ -2184,7 +2197,7 @@
 
                   <li>
                     <a class="" href="../../../installing/installing_ibm_cloud_public/installing-ibm-cloud-customizations.html">
-                      Installing a cluster on IBM Cloud with customizations
+                      Installing a cluster on IBM Cloud VPC with customizations
                     </a>
                   </li>
 
@@ -2208,7 +2221,7 @@
 
                   <li>
                     <a class="" href="../../../installing/installing_ibm_cloud_public/installing-ibm-cloud-network-customizations.html">
-                      Installing a cluster on IBM Cloud with network customizations
+                      Installing a cluster on IBM Cloud VPC with network customizations
                     </a>
                   </li>
 
@@ -2232,7 +2245,7 @@
 
                   <li>
                     <a class="" href="../../../installing/installing_ibm_cloud_public/uninstalling-cluster-ibm-cloud.html">
-                      Uninstalling a cluster on IBM Cloud
+                      Uninstalling a cluster on IBM Cloud VPC
                     </a>
                   </li>
 
@@ -8314,7 +8327,31 @@
 
 
                   <li>
-                    <a class="" href="../../../networking/external_dns_operator/nw-installing-external-dns-operator.html">
+                    <a class="" href="../../../networking/external_dns_operator/understanding-external-dns-operator.html">
+                      Understanding the External DNS Operator
+                    </a>
+                  </li>
+
+                
+
+
+                <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
+                     Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
+
+                
+                
+                
+                
+                
+
+                <!-- is this is a single page? That is, does this topic have more topics?
+                 Welcome 2 Index Page and Welcome 2 More -->
+
+
+
+
+                  <li>
+                    <a class="" href="../../../networking/external_dns_operator/nw-installing-external-dns-operator-on-cloud-providers.html">
                       Installing the External DNS Operator
                     </a>
                   </li>
@@ -8338,7 +8375,7 @@
 
 
                   <li>
-                    <a class="" href="../../../networking/external_dns_operator/nw-external-dns-operator-configuration-parameters.html">
+                    <a class="" href="../../../networking/external_dns_operator/nw-configuration-parameters.html">
                       External DNS Operator configuration parameters
                     </a>
                   </li>
@@ -8362,7 +8399,7 @@
 
 
                   <li>
-                    <a class="" href="../../../networking/external_dns_operator/nw-control-dns-records-public-hosted-zone-aws.html">
+                    <a class="" href="../../../networking/external_dns_operator/nw-creating-dns-records-on-aws.html">
                       Creating DNS records on an public hosted zone for AWS
                     </a>
                   </li>
@@ -8386,7 +8423,7 @@
 
 
                   <li>
-                    <a class="" href="../../../networking/external_dns_operator/nw-control-dns-records-public-hosted-zone-azure.html">
+                    <a class="" href="../../../networking/external_dns_operator/nw-creating-dns-records-on-azure.html">
                       Creating DNS records on an public zone for Azure
                     </a>
                   </li>
@@ -8410,8 +8447,32 @@
 
 
                   <li>
-                    <a class="" href="../../../networking/external_dns_operator/nw-control-dns-records-public-managed-zone-gcp.html">
+                    <a class="" href="../../../networking/external_dns_operator/nw-creating-dns-records-on-gcp.html">
                       Creating DNS records on an public managed zone for GCP
+                    </a>
+                  </li>
+
+                
+
+
+                <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
+                     Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
+
+                
+                
+                
+                
+                
+
+                <!-- is this is a single page? That is, does this topic have more topics?
+                 Welcome 2 Index Page and Welcome 2 More -->
+
+
+
+
+                  <li>
+                    <a class="" href="../../../networking/external_dns_operator/nw-creating-dns-records-on-infoblox.html">
+                      Creating DNS records on a public DNS zone for Infoblox
                     </a>
                   </li>
 
@@ -8646,13 +8707,131 @@
             <li class="nav-header">
               <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-14">
                 <span id="sgSpan-12-14" class="fa fa-caret-right"></span>
-                  &nbsp;Multiple networks
+                  &nbsp;AWS Load Balancer Operator
 
                   <!-- prints out the names of the second level books with arrow down or to right
                   So in this case: Welcome 2 -->
 
               </a>
               <ul id="topicSubGroup-12-14" class="nav-tertiary list-unstyled collapse">
+
+                <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
+                     Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
+
+                
+                
+                
+                
+                
+
+                <!-- is this is a single page? That is, does this topic have more topics?
+                 Welcome 2 Index Page and Welcome 2 More -->
+
+
+
+
+                  <li>
+                    <a class="" href="../../../networking/aws_load_balancer_operator/install-aws-load-balancer-operator.html">
+                      Installing the AWS Load Balancer Operator
+                    </a>
+                  </li>
+
+                
+
+
+                <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
+                     Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
+
+                
+                
+                
+                
+                
+
+                <!-- is this is a single page? That is, does this topic have more topics?
+                 Welcome 2 Index Page and Welcome 2 More -->
+
+
+
+
+                  <li>
+                    <a class="" href="../../../networking/aws_load_balancer_operator/create-instance-aws-load-balancer-controller.html">
+                      Creating an instance of the AWS Load Balancer Controller
+                    </a>
+                  </li>
+
+                
+
+
+                <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
+                     Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
+
+                
+                
+                
+                
+                
+
+                <!-- is this is a single page? That is, does this topic have more topics?
+                 Welcome 2 Index Page and Welcome 2 More -->
+
+
+
+
+                  <li>
+                    <a class="" href="../../../networking/aws_load_balancer_operator/multiple-ingress-through-single-alb.html">
+                      Serving Multiple Ingresses through a single AWS Load Balancer
+                    </a>
+                  </li>
+
+                
+
+
+                <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
+                     Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
+
+                
+                
+                
+                
+                
+
+                <!-- is this is a single page? That is, does this topic have more topics?
+                 Welcome 2 Index Page and Welcome 2 More -->
+
+
+
+
+                  <li>
+                    <a class="" href="../../../networking/aws_load_balancer_operator/add-tls-termination.html">
+                      Adding TLS termination on the AWS Load Balancer
+                    </a>
+                  </li>
+
+                
+
+              </ul>
+            </li>
+
+        <!-- for each topic in this topic_group, for example in Welcome 1, what topics exist?
+        Welcome 2 and Welcome 1 More -->
+
+
+            <!-- this topic contains subtopics - Welcome 2 -->
+
+
+            <!-- start a new heading area -->
+
+            <li class="nav-header">
+              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-15">
+                <span id="sgSpan-12-15" class="fa fa-caret-right"></span>
+                  &nbsp;Multiple networks
+
+                  <!-- prints out the names of the second level books with arrow down or to right
+                  So in this case: Welcome 2 -->
+
+              </a>
+              <ul id="topicSubGroup-12-15" class="nav-tertiary list-unstyled collapse">
 
                 <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
                      Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
@@ -8882,15 +9061,15 @@
             <!-- start a new heading area -->
 
             <li class="nav-header">
-              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-15">
-                <span id="sgSpan-12-15" class="fa fa-caret-right"></span>
+              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-16">
+                <span id="sgSpan-12-16" class="fa fa-caret-right"></span>
                   &nbsp;Hardware networks
 
                   <!-- prints out the names of the second level books with arrow down or to right
                   So in this case: Welcome 2 -->
 
               </a>
-              <ul id="topicSubGroup-12-15" class="nav-tertiary list-unstyled collapse">
+              <ul id="topicSubGroup-12-16" class="nav-tertiary list-unstyled collapse">
 
                 <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
                      Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
@@ -9192,15 +9371,15 @@
             <!-- start a new heading area -->
 
             <li class="nav-header">
-              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-16">
-                <span id="sgSpan-12-16" class="fa fa-caret-right"></span>
+              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-17">
+                <span id="sgSpan-12-17" class="fa fa-caret-right"></span>
                   &nbsp;OpenShift SDN default CNI network provider
 
                   <!-- prints out the names of the second level books with arrow down or to right
                   So in this case: Welcome 2 -->
 
               </a>
-              <ul id="topicSubGroup-12-16" class="nav-tertiary list-unstyled collapse">
+              <ul id="topicSubGroup-12-17" class="nav-tertiary list-unstyled collapse">
 
                 <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
                      Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
@@ -9574,15 +9753,15 @@
             <!-- start a new heading area -->
 
             <li class="nav-header">
-              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-17">
-                <span id="sgSpan-12-17" class="fa fa-caret-right"></span>
+              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-18">
+                <span id="sgSpan-12-18" class="fa fa-caret-right"></span>
                   &nbsp;OVN-Kubernetes default CNI network provider
 
                   <!-- prints out the names of the second level books with arrow down or to right
                   So in this case: Welcome 2 -->
 
               </a>
-              <ul id="topicSubGroup-12-17" class="nav-tertiary list-unstyled collapse">
+              <ul id="topicSubGroup-12-18" class="nav-tertiary list-unstyled collapse">
 
                 <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
                      Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
@@ -10004,15 +10183,15 @@
             <!-- start a new heading area -->
 
             <li class="nav-header">
-              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-18">
-                <span id="sgSpan-12-18" class="fa fa-caret-right"></span>
+              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-19">
+                <span id="sgSpan-12-19" class="fa fa-caret-right"></span>
                   &nbsp;Configuring Routes
 
                   <!-- prints out the names of the second level books with arrow down or to right
                   So in this case: Welcome 2 -->
 
               </a>
-              <ul id="topicSubGroup-12-18" class="nav-tertiary list-unstyled collapse">
+              <ul id="topicSubGroup-12-19" class="nav-tertiary list-unstyled collapse">
 
                 <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
                      Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
@@ -10074,15 +10253,15 @@
             <!-- start a new heading area -->
 
             <li class="nav-header">
-              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-19">
-                <span id="sgSpan-12-19" class="fa fa-caret-right"></span>
+              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-20">
+                <span id="sgSpan-12-20" class="fa fa-caret-right"></span>
                   &nbsp;Configuring ingress cluster traffic
 
                   <!-- prints out the names of the second level books with arrow down or to right
                   So in this case: Welcome 2 -->
 
               </a>
-              <ul id="topicSubGroup-12-19" class="nav-tertiary list-unstyled collapse">
+              <ul id="topicSubGroup-12-20" class="nav-tertiary list-unstyled collapse">
 
                 <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
                      Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
@@ -10196,8 +10375,8 @@
 
 
                   <li>
-                    <a class="" href="../../../networking/configuring_ingress_cluster_traffic/configuring-ingress-cluster-traffic-aws-network-load-balancer.html">
-                      Configuring ingress cluster traffic on AWS using a Network Load Balancer
+                    <a class="" href="../../../networking/configuring_ingress_cluster_traffic/configuring-ingress-cluster-traffic-aws.html">
+                      Configuring ingress cluster traffic on AWS
                     </a>
                   </li>
 
@@ -10264,15 +10443,15 @@
             <!-- start a new heading area -->
 
             <li class="nav-header">
-              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-20">
-                <span id="sgSpan-12-20" class="fa fa-caret-right"></span>
+              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-21">
+                <span id="sgSpan-12-21" class="fa fa-caret-right"></span>
                   &nbsp;Kubernetes NMState
 
                   <!-- prints out the names of the second level books with arrow down or to right
                   So in this case: Welcome 2 -->
 
               </a>
-              <ul id="topicSubGroup-12-20" class="nav-tertiary list-unstyled collapse">
+              <ul id="topicSubGroup-12-21" class="nav-tertiary list-unstyled collapse">
 
                 <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
                      Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
@@ -10421,15 +10600,15 @@
             <!-- start a new heading area -->
 
             <li class="nav-header">
-              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-24">
-                <span id="sgSpan-12-24" class="fa fa-caret-right"></span>
+              <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-12-25">
+                <span id="sgSpan-12-25" class="fa fa-caret-right"></span>
                   &nbsp;Load balancing with MetalLB
 
                   <!-- prints out the names of the second level books with arrow down or to right
                   So in this case: Welcome 2 -->
 
               </a>
-              <ul id="topicSubGroup-12-24" class="nav-tertiary list-unstyled collapse">
+              <ul id="topicSubGroup-12-25" class="nav-tertiary list-unstyled collapse">
 
                 <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
                      Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
@@ -12772,6 +12951,66 @@
                     <li>
                       <a class="" href="../../../operators/operator_sdk/helm/osdk-hybrid-helm.html" style="padding-left: 70px;">
                         Hybrid Helm Operator
+                      </a>
+                    </li>
+
+                  </ul>
+                  </li>
+
+
+
+
+                <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
+                     Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
+
+                
+                
+                
+                
+                
+
+
+
+                <!-- Welcome 3 -->
+
+
+                
+                
+                
+
+                <li class="nav-header">
+                  <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-15-4-6">
+                    <span id="ssgSpan-15-4-6" class="fa fa-caret-right"></span>
+                    &nbsp;Java-based Operators
+                  </a>
+                  <ul id="topicSubSubGroup-15-4-6" class="nav-tertiary list-unstyled collapse">
+
+                    <!-- list all topics within Welcome 3 here. Note that we are not coding this for more subtopics here -->
+
+
+                    <li>
+                      <a class="" href="../../../operators/operator_sdk/java/osdk-java-quickstart.html" style="padding-left: 70px;">
+                        Getting started
+                      </a>
+                    </li>
+
+
+                    <!-- list all topics within Welcome 3 here. Note that we are not coding this for more subtopics here -->
+
+
+                    <li>
+                      <a class="" href="../../../operators/operator_sdk/java/osdk-java-tutorial.html" style="padding-left: 70px;">
+                        Tutorial
+                      </a>
+                    </li>
+
+
+                    <!-- list all topics within Welcome 3 here. Note that we are not coding this for more subtopics here -->
+
+
+                    <li>
+                      <a class="" href="../../../operators/operator_sdk/java/osdk-java-project-layout.html" style="padding-left: 70px;">
+                        Project layout
                       </a>
                     </li>
 
@@ -28227,7 +28466,7 @@
 
                     <li>
                       <a class=" active" href="../../../virt/virtual_machines/vm_networking/virt-using-the-default-pod-network-with-virt.html" style="padding-left: 70px;">
-                        Using the default pod network with OpenShift Virtualization
+                        Configuring the virtual machine for the default pod network
                       </a>
                     </li>
 
@@ -28237,7 +28476,7 @@
 
                     <li>
                       <a class="" href="../../../virt/virtual_machines/vm_networking/virt-attaching-vm-multiple-networks.html" style="padding-left: 70px;">
-                        Attaching a virtual machine to multiple networks
+                        Attaching a virtual machine to a Linux bridge network
                       </a>
                     </li>
 
@@ -28810,7 +29049,7 @@
 
                   <li>
                     <a class="" href="../../../virt/live_migration/virt-migrating-vm-on-secondary-network.html">
-                      Migrating a virtual machine over a dedicated secondary network
+                      Migrating a virtual machine over a dedicated additional network
                     </a>
                   </li>
 
@@ -30328,7 +30567,7 @@
 
                   <li>
                     <a class="" href="../../../serverless/develop/serverless-kafka-developer.html">
-                      Knative Kafka
+                      Using Knative Kafka
                     </a>
                   </li>
 
@@ -30398,7 +30637,7 @@
 
                   <li>
                     <a class="" href="../../../serverless/admin_guide/serverless-kafka-admin.html">
-                      Knative Kafka
+                      Configuring Knative Kafka
                     </a>
                   </li>
 
@@ -30421,56 +30660,8 @@
 
 
                   <li>
-                    <a class="" href="../../../serverless/admin_guide/serverless-cluster-admin-eventing.html">
-                      Creating Knative Eventing components in the Administrator perspective
-                    </a>
-                  </li>
-
-                
-
-
-                <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
-                     Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
-
-                
-                
-                
-                
-                
-
-                <!-- is this is a single page? That is, does this topic have more topics?
-                 Welcome 2 Index Page and Welcome 2 More -->
-
-
-
-
-                  <li>
-                    <a class="" href="../../../serverless/admin_guide/serverless-cluster-admin-serving.html">
-                      Creating Knative Serving components in the Administrator perspective
-                    </a>
-                  </li>
-
-                
-
-
-                <!-- for each topic in this topic_group, in Welcome 2, what topics exist?
-                     Welcome 2 Index Page, Welcome 3 and Welcome 2 More - we list them all.. -->
-
-                
-                
-                
-                
-                
-
-                <!-- is this is a single page? That is, does this topic have more topics?
-                 Welcome 2 Index Page and Welcome 2 More -->
-
-
-
-
-                  <li>
-                    <a class="" href="../../../serverless/admin_guide/serverless-admin-autoscaling.html">
-                      Autoscaling
+                    <a class="" href="../../../serverless/admin_guide/serverless-admin-perspective.html">
+                      Serverless components in the Administrator perspective
                     </a>
                   </li>
 
@@ -30542,7 +30733,7 @@
 
                   <li>
                     <a class="" href="../../../serverless/admin_guide/serverless-ha.html">
-                      High availability on OpenShift Serverless
+                      High availability
                     </a>
                   </li>
 
@@ -31150,7 +31341,7 @@
       <div class="col-xs-12 col-sm-9 col-md-9 main">
         <div class="page-header">
           <h1>
-            Using the default pod network for virtual machines
+            Configuring the virtual machine for the default pod network
           </h1>
         </div>
         
@@ -31162,25 +31353,11 @@
 <ul class="sectlevel1">
 <li><a href="#virt-configuring-masquerade-mode-cli_virt-using-the-default-pod-network-with-virt">Configuring masquerade mode from the command line</a></li>
 <li><a href="#virt-configuring-masquerade-mode-dual-stack_virt-using-the-default-pod-network-with-virt">Configuring masquerade mode with dual-stack (IPv4 and IPv6)</a></li>
-<li><a href="#virt-selecting-binding-method">Selecting binding method</a>
-<ul class="sectlevel2">
-<li><a href="#virt-networking-wizard-fields-web_virt-using-the-default-pod-network-with-virt">Networking fields</a></li>
-</ul>
-</li>
-<li><a href="#virtual-machine-configuration-examples-for-the-default-network">Virtual machine configuration examples for the default network</a>
-<ul class="sectlevel2">
-<li><a href="#virt-template-vm-config_virt-using-the-default-pod-network-with-virt">Template: Virtual machine configuration file</a></li>
-<li><a href="#virt-template-windows-vm_virt-using-the-default-pod-network-with-virt">Template: Windows virtual machine configuration file</a></li>
-</ul>
-</li>
 <li><a href="#virt-creating-a-service-from-a-virtual-machine_virt-using-the-default-pod-network-with-virt">Creating a service from a virtual machine</a></li>
 </ul>
 </div>
 <div class="paragraph">
-<p>You can use the default pod network with OpenShift Virtualization. To do so, you must use the <code>masquerade</code> binding method. Do not use <code>masquerade</code> mode with non-default networks.</p>
-</div>
-<div class="paragraph">
-<p><a href="../../../virt/virtual_machines/vm_networking/virt-attaching-vm-multiple-networks.html#attaching-to-multiple-networks">For secondary networks</a>, use the <code>bridge</code> binding method.</p>
+<p>You can connect a virtual machine to the default internal pod network by configuring its network interface to use the <code>masquerade</code> binding mode</p>
 </div>
 </div>
 </div>
@@ -31358,165 +31535,6 @@ The examples below are configured to use DHCP.</p>
 <div class="listingblock">
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc get vmi &lt;vmi-name&gt; <span class="nt">-o</span> <span class="nv">jsonpath</span><span class="o">=</span><span class="s2">"{.status.interfaces[*].ipAddresses}"</span></code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="virt-selecting-binding-method"><a class="anchor" href="#virt-selecting-binding-method"></a>Selecting binding method</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>If you create a virtual machine from the OpenShift Virtualization
-<a href="../../../virt/virtual_machines/virt-create-vms.html#virt-create-vms">web console wizard</a>,
-select the required binding method from the <strong>Networking</strong> screen.</p>
-</div>
-<div class="sect2">
-<h3 id="virt-networking-wizard-fields-web_virt-using-the-default-pod-network-with-virt"><a class="anchor" href="#virt-networking-wizard-fields-web_virt-using-the-default-pod-network-with-virt"></a>Networking fields</h3>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Name</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Name for the network interface controller.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Model</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Indicates the model of the network interface controller. Supported values are <strong>e1000e</strong> and <strong>virtio</strong>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Network</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">List of available network attachment definitions.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">List of available binding methods. For the default pod network, <code>masquerade</code> is the only recommended binding method. For secondary networks, use the <code>bridge</code> binding method. The <code>masquerade</code> method is not supported for non-default networks. Select <code>SR-IOV</code> if you configured an SR-IOV network device and defined that network in the namespace.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">MAC Address</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">MAC address for the network interface controller. If a MAC address is not specified, one is assigned automatically.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="virtual-machine-configuration-examples-for-the-default-network"><a class="anchor" href="#virtual-machine-configuration-examples-for-the-default-network"></a>Virtual machine configuration examples for the default network</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="virt-template-vm-config_virt-using-the-default-pod-network-with-virt"><a class="anchor" href="#virt-template-vm-config_virt-using-the-default-pod-network-with-virt"></a>Template: Virtual machine configuration file</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">kubevirt.io/v1</span>
-<span class="na">kind</span><span class="pi">:</span> <span class="s">VirtualMachine</span>
-<span class="na">metadata</span><span class="pi">:</span>
-  <span class="na">name</span><span class="pi">:</span> <span class="s">example-vm</span>
-  <span class="na">namespace</span><span class="pi">:</span> <span class="s">default</span>
-<span class="na">spec</span><span class="pi">:</span>
-  <span class="na">running</span><span class="pi">:</span> <span class="no">false</span>
-  <span class="na">template</span><span class="pi">:</span>
-    <span class="na">spec</span><span class="pi">:</span>
-      <span class="na">domain</span><span class="pi">:</span>
-        <span class="na">devices</span><span class="pi">:</span>
-          <span class="na">disks</span><span class="pi">:</span>
-            <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">containerdisk</span>
-              <span class="na">disk</span><span class="pi">:</span>
-                <span class="na">bus</span><span class="pi">:</span> <span class="s">virtio</span>
-            <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">cloudinitdisk</span>
-              <span class="na">disk</span><span class="pi">:</span>
-                <span class="na">bus</span><span class="pi">:</span> <span class="s">virtio</span>
-          <span class="na">interfaces</span><span class="pi">:</span>
-          <span class="pi">-</span> <span class="na">masquerade</span><span class="pi">:</span> <span class="pi">{}</span>
-            <span class="na">name</span><span class="pi">:</span> <span class="s">default</span>
-        <span class="na">resources</span><span class="pi">:</span>
-          <span class="na">requests</span><span class="pi">:</span>
-            <span class="na">memory</span><span class="pi">:</span> <span class="s">1024M</span>
-      <span class="na">networks</span><span class="pi">:</span>
-        <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">default</span>
-          <span class="na">pod</span><span class="pi">:</span> <span class="pi">{}</span>
-      <span class="na">volumes</span><span class="pi">:</span>
-        <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">containerdisk</span>
-          <span class="na">containerDisk</span><span class="pi">:</span>
-            <span class="na">image</span><span class="pi">:</span> <span class="s">kubevirt/fedora-cloud-container-disk-demo</span>
-        <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">cloudinitdisk</span>
-          <span class="na">cloudInitNoCloud</span><span class="pi">:</span>
-            <span class="na">userData</span><span class="pi">:</span> <span class="pi">|</span>
-              <span class="s">#!/bin/bash</span>
-              <span class="s">echo "fedora" | passwd fedora --stdin</span></code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="virt-template-windows-vm_virt-using-the-default-pod-network-with-virt"><a class="anchor" href="#virt-template-windows-vm_virt-using-the-default-pod-network-with-virt"></a>Template: Windows virtual machine configuration file</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">kubevirt.io/v1</span>
-<span class="na">kind</span><span class="pi">:</span> <span class="s">VirtualMachine</span>
-<span class="na">metadata</span><span class="pi">:</span>
-  <span class="na">labels</span><span class="pi">:</span>
-    <span class="na">special</span><span class="pi">:</span> <span class="s">vm-windows</span>
-  <span class="na">name</span><span class="pi">:</span> <span class="s">vm-windows</span>
-<span class="na">spec</span><span class="pi">:</span>
-  <span class="na">template</span><span class="pi">:</span>
-    <span class="na">metadata</span><span class="pi">:</span>
-      <span class="na">labels</span><span class="pi">:</span>
-        <span class="na">special</span><span class="pi">:</span> <span class="s">vm-windows</span>
-    <span class="na">spec</span><span class="pi">:</span>
-      <span class="na">domain</span><span class="pi">:</span>
-        <span class="na">clock</span><span class="pi">:</span>
-          <span class="na">timer</span><span class="pi">:</span>
-            <span class="na">hpet</span><span class="pi">:</span>
-              <span class="na">present</span><span class="pi">:</span> <span class="no">false</span>
-            <span class="na">hyperv</span><span class="pi">:</span> <span class="pi">{}</span>
-            <span class="na">pit</span><span class="pi">:</span>
-              <span class="na">tickPolicy</span><span class="pi">:</span> <span class="s">delay</span>
-            <span class="na">rtc</span><span class="pi">:</span>
-              <span class="na">tickPolicy</span><span class="pi">:</span> <span class="s">catchup</span>
-          <span class="na">utc</span><span class="pi">:</span> <span class="pi">{}</span>
-        <span class="na">cpu</span><span class="pi">:</span>
-          <span class="na">cores</span><span class="pi">:</span> <span class="m">2</span>
-        <span class="na">devices</span><span class="pi">:</span>
-          <span class="na">disks</span><span class="pi">:</span>
-          <span class="pi">-</span> <span class="na">disk</span><span class="pi">:</span>
-              <span class="na">bus</span><span class="pi">:</span> <span class="s">sata</span>
-            <span class="na">name</span><span class="pi">:</span> <span class="s">pvcdisk</span>
-          <span class="na">interfaces</span><span class="pi">:</span>
-          <span class="pi">-</span> <span class="na">masquerade</span><span class="pi">:</span> <span class="pi">{}</span>
-            <span class="na">model</span><span class="pi">:</span> <span class="s">e1000</span>
-            <span class="na">name</span><span class="pi">:</span> <span class="s">default</span>
-        <span class="na">features</span><span class="pi">:</span>
-          <span class="na">acpi</span><span class="pi">:</span> <span class="pi">{}</span>
-          <span class="na">apic</span><span class="pi">:</span> <span class="pi">{}</span>
-          <span class="na">hyperv</span><span class="pi">:</span>
-            <span class="na">relaxed</span><span class="pi">:</span> <span class="pi">{}</span>
-            <span class="na">spinlocks</span><span class="pi">:</span>
-              <span class="na">spinlocks</span><span class="pi">:</span> <span class="m">8191</span>
-            <span class="na">vapic</span><span class="pi">:</span> <span class="pi">{}</span>
-        <span class="na">firmware</span><span class="pi">:</span>
-          <span class="na">uuid</span><span class="pi">:</span> <span class="s">5d307ca9-b3ef-428c-8861-06e72d69f223</span>
-        <span class="na">machine</span><span class="pi">:</span>
-          <span class="na">type</span><span class="pi">:</span> <span class="s">q35</span>
-        <span class="na">resources</span><span class="pi">:</span>
-          <span class="na">requests</span><span class="pi">:</span>
-            <span class="na">memory</span><span class="pi">:</span> <span class="s">2Gi</span>
-      <span class="na">networks</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">default</span>
-        <span class="na">pod</span><span class="pi">:</span> <span class="pi">{}</span>
-      <span class="na">terminationGracePeriodSeconds</span><span class="pi">:</span> <span class="m">3600</span>
-      <span class="na">volumes</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">pvcdisk</span>
-        <span class="na">persistentVolumeClaim</span><span class="pi">:</span>
-          <span class="na">claimName</span><span class="pi">:</span> <span class="s">disk-windows</span></code></pre>
-</div>
 </div>
 </div>
 </div>
@@ -31869,17 +31887,6 @@ External ports are dynamically allocated when using service type
 </div>
 </li>
 </ol>
-</div>
-<div class="ulist _additional-resources">
-<div class="title">Additional resources</div>
-<ul>
-<li>
-<p><a href="../../../networking/configuring_ingress_cluster_traffic/configuring-externalip.html#configuring-externalip">Configuring external IPs</a></p>
-</li>
-<li>
-<p><a href="../../../rest_api/network_apis/service-v1.html#service-v1">Service API specification</a></p>
-</li>
-</ul>
 </div>
 </div>
 </div>
