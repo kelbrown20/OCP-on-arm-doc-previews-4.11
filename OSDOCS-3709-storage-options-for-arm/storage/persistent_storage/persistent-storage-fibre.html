@@ -31120,6 +31120,20 @@
 OpenShift Container Platform cluster with persistent storage using Fibre channel volumes.
 Some familiarity with Kubernetes and Fibre Channel is assumed.</p>
 </div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Persistent storage using Fibre Channel is not supported on ARM architecture based infrastructures.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p>The Kubernetes persistent volume framework allows administrators to provision a
 cluster with persistent storage and gives users a way to request those
@@ -31139,20 +31153,6 @@ requested by users.</p>
 <div class="paragraph">
 <p>High availability of storage in the infrastructure is left to the underlying
 storage provider.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Persistent storage using Fibre Channel is not supported on ARM architecture based infrastructures.</p>
 </div>
 </td>
 </tr>
