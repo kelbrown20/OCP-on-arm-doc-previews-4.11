@@ -31916,7 +31916,7 @@ kni1-worker-0    available	 worker   87m   v1.18.2</span></code></pre>
     <span class="na">provisioningInterface</span><span class="pi">:</span> <span class="s">enp1s0</span>
     <span class="na">provisioningNetwork</span><span class="pi">:</span> <span class="s">Managed</span>
     <span class="na">provisioningNetworkCIDR</span><span class="pi">:</span> <span class="s">172.22.0.0/24</span>
-    <span class="na">provisioningOSDownloadURL</span><span class="pi">:</span> <span class="s">http://192.168.111.1/images/rhcos-&lt;version&gt;.x86_64.qcow2.gz?sha256=&lt;sha256&gt;</span>
+    <span class="na">provisioningOSDownloadURL</span><span class="pi">:</span> <span class="s">http://192.168.111.1/images/rhcos-&lt;version&gt;.&lt;architecture&gt;.qcow2.gz?sha256=&lt;sha256&gt;</span>
     <span class="na">virtualMediaViaExternalNetwork</span><span class="pi">:</span> <span class="no">true</span> <i class="conum" data-value="1"></i><b>(1)</b>
   <span class="na">status</span><span class="pi">:</span>
     <span class="na">generations</span><span class="pi">:</span>
@@ -31987,8 +31987,8 @@ kni1-worker-0    available	 worker   87m   v1.18.2</span></code></pre>
             <span class="na">apiVersion</span><span class="pi">:</span> <span class="s">baremetal.cluster.k8s.io/v1alpha1</span>
             <span class="na">hostSelector</span><span class="pi">:</span> <span class="pi">{}</span>
             <span class="na">image</span><span class="pi">:</span>
-              <span class="na">checksum</span><span class="pi">:</span> <span class="s">http:/172.22.0.3:6181/images/rhcos-&lt;version&gt;.x86_64.qcow2.&lt;md5sum&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
-              <span class="na">url</span><span class="pi">:</span> <span class="s">http://172.22.0.3:6181/images/rhcos-&lt;version&gt;.x86_64.qcow2</span> <i class="conum" data-value="2"></i><b>(2)</b>
+              <span class="na">checksum</span><span class="pi">:</span> <span class="s">http:/172.22.0.3:6181/images/rhcos-&lt;version&gt;.&lt;architecture&gt;.qcow2.&lt;md5sum&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
+              <span class="na">url</span><span class="pi">:</span> <span class="s">http://172.22.0.3:6181/images/rhcos-&lt;version&gt;.&lt;architecture&gt;.qcow2</span> <i class="conum" data-value="2"></i><b>(2)</b>
             <span class="na">kind</span><span class="pi">:</span> <span class="s">BareMetalMachineProviderSpec</span>
             <span class="na">metadata</span><span class="pi">:</span>
               <span class="na">creationTimestamp</span><span class="pi">:</span> <span class="no">null</span>

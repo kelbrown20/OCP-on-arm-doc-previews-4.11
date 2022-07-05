@@ -31430,7 +31430,7 @@
 <p>Verify the Red Hat Enterprise Linux CoreOS (RHCOS) QEMU images are properly defined and accessible via the URL provided in the <code>install-config.yaml</code>. For example:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>curl <span class="nt">-s</span> <span class="nt">-o</span> /dev/null <span class="nt">-I</span> <span class="nt">-w</span> <span class="s2">"%{http_code}</span><span class="se">\n</span><span class="s2">"</span> http://webserver.example.com:8080/rhcos-44.81.202004250133-0-qemu.x86_64.qcow2.gz?sha256<span class="o">=</span>7d884b46ee54fe87bbc3893bf2aa99af3b2d31f2e19ab5529c60636fbd0f1ce7</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>curl <span class="nt">-s</span> <span class="nt">-o</span> /dev/null <span class="nt">-I</span> <span class="nt">-w</span> <span class="s2">"%{http_code}</span><span class="se">\n</span><span class="s2">"</span> http://webserver.example.com:8080/rhcos-44.81.202004250133-0-qemu.&lt;architecture&gt;.qcow2.gz?sha256<span class="o">=</span>7d884b46ee54fe87bbc3893bf2aa99af3b2d31f2e19ab5529c60636fbd0f1ce7</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -31665,8 +31665,8 @@ installation over IPMI:</p>
 <div class="listingblock">
 <div class="title">Example of internal webserver hosting RHCOS images</div>
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">bootstrapOSImage</span><span class="pi">:</span> <span class="s">http://&lt;ip:port&gt;/rhcos-43.81.202001142154.0-qemu.x86_64.qcow2.gz?sha256=9d999f55ff1d44f7ed7c106508e5deecd04dc3c06095d34d36bf1cd127837e0c</span>
-<span class="na">clusterOSImage</span><span class="pi">:</span> <span class="s">http://&lt;ip:port&gt;/rhcos-43.81.202001142154.0-openstack.x86_64.qcow2.gz?sha256=a1bda656fa0892f7b936fdc6b6a6086bddaed5dafacedcd7a1e811abb78fe3b0</span></code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">bootstrapOSImage</span><span class="pi">:</span> <span class="s">http://&lt;ip:port&gt;/rhcos-43.81.202001142154.0-qemu.&lt;architecture&gt;.qcow2.gz?sha256=9d999f55ff1d44f7ed7c106508e5deecd04dc3c06095d34d36bf1cd127837e0c</span>
+<span class="na">clusterOSImage</span><span class="pi">:</span> <span class="s">http://&lt;ip:port&gt;/rhcos-43.81.202001142154.0-openstack.&lt;architecture&gt;.qcow2.gz?sha256=a1bda656fa0892f7b936fdc6b6a6086bddaed5dafacedcd7a1e811abb78fe3b0</span></code></pre>
 </div>
 </div>
 <div class="paragraph">

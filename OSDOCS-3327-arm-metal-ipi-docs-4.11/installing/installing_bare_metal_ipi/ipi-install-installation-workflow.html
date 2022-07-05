@@ -31680,23 +31680,21 @@ bridge-slave-eno2  f31c3353-54b7-48de-893a-02d2b34c4736  ethernet  eno2</span></
 <h2 id="retrieving-the-openshift-installer_ipi-install-installation-workflow"><a class="anchor" href="#retrieving-the-openshift-installer_ipi-install-installation-workflow"></a>Retrieving the OpenShift Container Platform installer</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Use the <code>stable-4.x</code> version of the installer based on your selected architecture to deploy the generally
-available stable version of OpenShift Container Platform:</p>
+<p>Use the <code>stable-4.x</code> version of the installation program and your selected architecture to deploy the generally available stable version of OpenShift Container Platform:</p>
 </div>
 <div class="listingblock">
-<div class="title">For x86_64</div>
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal">$ export VERSION=stable-Branch Build
-$ export RELEASE_ARCH=x86_64
-export RELEASE_IMAGE=$(curl -s https://mirror.openshift.com/pub/openshift-v4/$RELEASE_ARCH/ocp/$VERSION/release.txt | grep 'Pull From: quay.io' | awk -F ' ' '{print $3}')</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span><span class="nb">export </span><span class="nv">VERSION</span><span class="o">=</span>stable-Branch Build</code></pre>
 </div>
 </div>
 <div class="listingblock">
-<div class="title">For aarch64</div>
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal">$ export VERSION=stable-Branch Build
-$ export RELEASE_ARCH=aarch64
-export RELEASE_IMAGE=$(curl -s https://mirror.openshift.com/pub/openshift-v4/$RELEASE_ARCH/ocp/$VERSION/release.txt | grep 'Pull From: quay.io' | awk -F ' ' '{print $3}')</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span><span class="nb">export </span><span class="nv">RELEASE_ARCH</span><span class="o">=</span>&lt;architecture&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span><span class="nb">export </span><span class="nv">RELEASE_IMAGE</span><span class="o">=</span><span class="si">$(</span>curl <span class="nt">-s</span> https://mirror.openshift.com/pub/openshift-v4/<span class="nv">$RELEASE_ARCH</span>/clients/ocp/<span class="nv">$VERSION</span>/release.txt | <span class="nb">grep</span> <span class="s1">'Pull From: quay.io'</span> | <span class="nb">awk</span> <span class="nt">-F</span> <span class="s1">' '</span> <span class="s1">'{print $3}'</span><span class="si">)</span></code></pre>
 </div>
 </div>
 </div>
@@ -32287,6 +32285,11 @@ and the <code>bmc</code> parameter for the <code>install-config.yaml</code> file
 <td class="tableblock halign-left valign-top"><p class="tableblock">The name of the <code>provisioning</code> bridge on the <code>provisioner</code> host attached to the <code>provisioning</code> network.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>architecture</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Defines the host architecture for your cluster. Valid values are <code>amd64</code> or <code>arm64</code>.</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>defaultMachinePlatform</code></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The default configuration used for machine pools without a platform configuration.</p></td>
@@ -32457,7 +32460,7 @@ and the <code>bmc</code> parameter for the <code>install-config.yaml</code> file
 </div>
 <h4 id="redfish-apis" class="discrete">Redfish APIs</h4>
 <div class="paragraph">
-<p>Several redfish API endpoints are called onto your BCM when using the bare-metal installer-provisioned infastructure.</p>
+<p>Several redfish API endpoints are called onto your BCM when using the bare-metal installer-provisioned infrastructure.</p>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -32467,59 +32470,77 @@ and the <code>bmc</code> parameter for the <code>install-config.yaml</code> file
 </td>
 <td class="content">
 <div class="paragraph">
-<p>You need to ensure that your BMC supports all of the redfish APIs prior to installation.</p>
+<p>You need to ensure that your BMC supports all of the redfish APIs before installation.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="paragraph">
-<p><strong>List of redfish APIs:</strong></p>
-</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">List of redfish APIs</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Power on</p>
 <div class="listingblock">
-<div class="title">PowerOn</div>
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">curl -u $</span>USER:<span class="nv">$PASS</span> <span class="nt">-X</span> POST <span class="nt">-H</span><span class="s1">'Content-Type: application/json'</span> <span class="nt">-H</span><span class="s1">'Accept: application/json'</span> <span class="nt">-d</span> <span class="s1">'{"Action": "Reset", "ResetType": "On"}'</span> https://<span class="nv">$SERVER</span>/redfish/v1/Systems/<span class="nv">$SystemID</span>/Actions/ComputerSystem.Reset</code></pre>
 </div>
 </div>
+</li>
+<li>
+<p>Power off</p>
 <div class="listingblock">
-<div class="title">PowerOff</div>
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">curl -u $</span>USER:<span class="nv">$PASS</span> <span class="nt">-X</span> POST <span class="nt">-H</span><span class="s1">'Content-Type: application/json'</span> <span class="nt">-H</span><span class="s1">'Accept: application/json'</span> <span class="nt">-d</span> <span class="s1">'{"Action": "Reset", "ResetType": "ForceOff"}'</span> https://<span class="nv">$SERVER</span>/redfish/v1/Systems/<span class="nv">$SystemID</span>/Actions/ComputerSystem.Reset</code></pre>
 </div>
 </div>
+</li>
+<li>
+<p>Temporary boot using <code>pxe</code></p>
 <div class="listingblock">
-<div class="title">Temporary boot</div>
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">curl -u $</span>USER:<span class="nv">$PASS</span> <span class="nt">-X</span> PATCH <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span>  https://<span class="nv">$Server</span>/redfish/v1/Systems/<span class="nv">$SystemID</span>/ <span class="nt">-d</span> <span class="s1">'{"Boot": {"BootSourceOverrideTarget": "pxe", "BootSourceOverrideEnabled": "Once"}}</span></code></pre>
 </div>
 </div>
-<div class="paragraph">
-<p><strong>List of redfish-virtualmedia APIs:</strong></p>
-</div>
+</li>
+<li>
+<p>Set BIOS boot mode using <code>Legacy</code> or <code>UEFI</code></p>
 <div class="listingblock">
-<div class="title">PowerOn</div>
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">curl -u $</span>USER:<span class="nv">$PASS</span> <span class="nt">-X</span> POST <span class="nt">-H</span><span class="s1">'Content-Type: application/json'</span> <span class="nt">-H</span><span class="s1">'Accept: application/json'</span> <span class="nt">-d</span> <span class="s1">'{"Action": "Reset", "ResetType": "On"}'</span> https://<span class="nv">$SERVER</span>/redfish/v1/Systems/<span class="nv">$SystemID</span>/Actions/ComputerSystem.Reset</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">curl -u $</span>USER:<span class="nv">$PASS</span> <span class="nt">-X</span> PATCH <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span>  https://<span class="nv">$Server</span>/redfish/v1/Systems/<span class="nv">$SystemID</span>/ <span class="nt">-d</span> <span class="s1">'{"Boot": {"BootSourceOverrideMode":"UEFI"}}</span></code></pre>
 </div>
 </div>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">List of redfish-virtualmedia APIs</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Set temporary boot device using <code>cd</code> or <code>dvd</code></p>
 <div class="listingblock">
-<div class="title">PowerOff</div>
-<div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">curl -u $</span>USER:<span class="nv">$PASS</span> <span class="nt">-X</span> POST <span class="nt">-H</span><span class="s1">'Content-Type: application/json'</span> <span class="nt">-H</span><span class="s1">'Accept: application/json'</span> <span class="nt">-d</span> <span class="s1">'{"Action": "Reset", "ResetType": "ForceOff"}'</span> https://<span class="nv">$SERVER</span>/redfish/v1/Systems/<span class="nv">$SystemID</span>/Actions/ComputerSystem.Reset</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="title">Set temporary boot device</div>
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">curl -u $</span>USER:<span class="nv">$PASS</span> <span class="nt">-X</span> PATCH <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> https://<span class="nv">$Server</span>/redfish/v1/Systems/<span class="nv">$SystemID</span>/ <span class="nt">-d</span> <span class="s1">'{"Boot": {"BootSourceOverrideTarget": "cd", "BootSourceOverrideEnabled": "Once"}}'</span></code></pre>
 </div>
 </div>
+</li>
+<li>
+<p>Mount virtual media</p>
 <div class="listingblock">
-<div class="title">Mount virtualmedia</div>
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">curl -u $</span>USER:<span class="nv">$PASS</span> <span class="nt">-X</span> PATCH <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="nt">-H</span> <span class="s2">"If-Match: *"</span> https://<span class="nv">$Server</span>/redfish/v1/Systems/<span class="nv">$SystemID</span>/ <span class="nt">-d</span> <span class="s1">'{"Image": "https://example.com/test.iso", "TransferProtocolType": "HTTPS", "UserName": "", "Password":""}'</span></code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">curl -u $</span>USER:<span class="nv">$PASS</span> <span class="nt">-X</span> PATCH <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="nt">-H</span> <span class="s2">"If-Match: *"</span> https://<span class="nv">$Server</span>/redfish/v1/Managers/<span class="nv">$ManagerID</span>/VirtualMedia/<span class="nv">$VmediaId</span> <span class="nt">-d</span> <span class="s1">'{"Image": "https://example.com/test.iso", "TransferProtocolType": "HTTPS", "UserName": "", "Password":""}'</span></code></pre>
 </div>
+</div>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -32529,7 +32550,21 @@ and the <code>bmc</code> parameter for the <code>install-config.yaml</code> file
 </td>
 <td class="content">
 <div class="paragraph">
-<p>We only support TransferProtocolTypes of HTTPS or HTTP.</p>
+<p>The <code>PowerOn</code> and <code>PowerOff</code> commands for redfish APIs are the same for the redfish-virtualmedia APIs.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><code>HTTPS</code> and <code>HTTP</code> are the only supported parameter types for <code>TransferProtocolTypes</code>.</p>
 </div>
 </td>
 </tr>
@@ -34179,7 +34214,7 @@ mirrored, extract it and pin it to the release:</p>
 <p>If your mirror host does not have internet access, run the following command:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc adm release extract <span class="nt">-a</span> <span class="k">${</span><span class="nv">LOCAL_SECRET_JSON</span><span class="k">}</span> <span class="nt">--command</span><span class="o">=</span>openshift-install <span class="s2">"</span><span class="k">${</span><span class="nv">LOCAL_REGISTRY</span><span class="k">}</span><span class="s2">/</span><span class="k">${</span><span class="nv">LOCAL_REPOSITORY</span><span class="k">}</span><span class="s2">:</span><span class="k">${</span><span class="nv">OCP_RELEASE</span><span class="k">}</span><span class="s2">"</span></code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc adm release extract <span class="nt">-a</span> <span class="k">${</span><span class="nv">LOCAL_SECRET_JSON</span><span class="k">}</span> <span class="nt">--command</span><span class="o">=</span>openshift-baremetal-install <span class="s2">"</span><span class="k">${</span><span class="nv">LOCAL_REGISTRY</span><span class="k">}</span><span class="s2">/</span><span class="k">${</span><span class="nv">LOCAL_REPOSITORY</span><span class="k">}</span><span class="s2">:</span><span class="k">${</span><span class="nv">OCP_RELEASE</span><span class="k">}</span><span class="s2">"</span></code></pre>
 </div>
 </div>
 </li>
@@ -34187,7 +34222,7 @@ mirrored, extract it and pin it to the release:</p>
 <p>If the local container registry is connected to the mirror host, run the following command:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc adm release extract <span class="nt">-a</span> <span class="k">${</span><span class="nv">LOCAL_SECRET_JSON</span><span class="k">}</span> <span class="nt">--command</span><span class="o">=</span>openshift-install <span class="s2">"</span><span class="k">${</span><span class="nv">LOCAL_REGISTRY</span><span class="k">}</span><span class="s2">/</span><span class="k">${</span><span class="nv">LOCAL_REPOSITORY</span><span class="k">}</span><span class="s2">:</span><span class="k">${</span><span class="nv">OCP_RELEASE</span><span class="k">}</span><span class="s2">-</span><span class="k">${</span><span class="nv">ARCHITECTURE</span><span class="k">}</span><span class="s2">"</span></code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc adm release extract <span class="nt">-a</span> <span class="k">${</span><span class="nv">LOCAL_SECRET_JSON</span><span class="k">}</span> <span class="nt">--command</span><span class="o">=</span>openshift-baremetal-install <span class="s2">"</span><span class="k">${</span><span class="nv">LOCAL_REGISTRY</span><span class="k">}</span><span class="s2">/</span><span class="k">${</span><span class="nv">LOCAL_REPOSITORY</span><span class="k">}</span><span class="s2">:</span><span class="k">${</span><span class="nv">OCP_RELEASE</span><span class="k">}</span><span class="s2">-</span><span class="k">${</span><span class="nv">ARCHITECTURE</span><span class="k">}</span><span class="s2">"</span></code></pre>
 </div>
 </div>
 <div class="admonitionblock important">
@@ -34220,7 +34255,7 @@ content.</p>
 <p>For clusters using installer-provisioned infrastructure, run the following command:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>openshift-install</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>openshift-baremetal-install</code></pre>
 </div>
 </div>
 </li>
